@@ -2,14 +2,29 @@
   display: grid;
   box-sizing: border-box;
   justify-content: stretch;	
-  height: 90vh;
-  width: 90vh;
+  height: 80vmin;
+  width: 80vmin;
   margin: 0 auto;
   padding: 0;
   border: 1px solid black;
-
+  background-color: #A1A199;
 }
 
-.grid {
-  border: 1px solid black;
+h1 {
+  color: yellow;
+  text-align: center;
+  font-size: 25px;
+}
+
+button {
+  margin: 10px 45%;
+  display: block;
+}
+
+html {
+  background-color: red;
+  /* background-image: url(https://d3d71ba2asa5oz.cloudfront.net/12021926/images/81t0ymdvkol._sx425_.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 80vmin ;
+  background-position: 50% 50%; */
 }

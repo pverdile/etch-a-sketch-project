@@ -1,6 +1,6 @@
 // Container creation
 const body = document.querySelector('body');
-const div = document.createElement('div'); //It will be reuse for grid creation
+const div = document.createElement('div');
 body.appendChild(div);
 const container = document.querySelector('div');
 container.id = 'container'
@@ -34,7 +34,7 @@ function drawLines() {
   }
 
   draw.forEach(square => {
-    square.addEventListener('mouseover', (e) => changeColor(e, 'black'));
+    square.addEventListener('mouseover', (e) => changeColor(e, '#454545'));
   });
 }
 
@@ -44,7 +44,7 @@ function blankAll() {
   draw.forEach(square => {
     square.style.backgroundColor = '';
   });
-  const side = prompt('How many sides?');
+  const side = prompt('How many sides? (1 - 64)', 16);
   gridDestruction();
   gridCreation(side);
   drawLines();
